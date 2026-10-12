@@ -13,5 +13,11 @@ window.CITIES = [
     name: "Brisighella",
     en: "A medieval village 10 minutes by train from Faenza",
     it: "Borgo medievale a 10 minuti di treno da Faenza"
+  },
+  {
+    id: "ravenna",
+    name: "Ravenna",
+    en: "The city of Byzantine mosaics",
+    it: "La città dei mosaici bizantini"
   }
 ];
