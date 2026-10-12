@@ -4,14 +4,18 @@
   const TEXT = {
     en: {
       title: "Our Recommendations",
-      intro: "A few of our favourite places to eat, drink and explore while you are here.",
+      intro: "A few of our favourite places to eat, drink and explore while you are here. Pick a city to start.",
+      cityIntro: "A few of our favourite places to eat, drink and explore while you are here.",
+      allCities: "All cities",
       all: "All",
       open: "Open in Google Maps",
       back: "Back to the wedding website"
     },
     it: {
       title: "I nostri consigli",
-      intro: "Alcuni dei nostri posti preferiti dove mangiare, bere ed esplorare durante il vostro soggiorno.",
+      intro: "Alcuni dei nostri posti preferiti dove mangiare, bere ed esplorare durante il vostro soggiorno. Scegliete una città.",
+      cityIntro: "Alcuni dei nostri posti preferiti dove mangiare, bere ed esplorare durante il vostro soggiorno.",
+      allCities: "Tutte le città",
       all: "Tutti",
       open: "Apri in Google Maps",
       back: "Torna al sito del matrimonio"
@@ -30,6 +34,7 @@
     try { localStorage.setItem("lang", lang); } catch (e) { /* not remembered */ }
   }
 
+  const cities = window.CITIES || [];
   const categories = window.CATEGORIES || [];
   const places = (window.PLACES || []).map((p, i) => ({ ...p, id: i }));
   const state = {
@@ -38,6 +43,7 @@
     filter: "all"
   };
 
+  const citiesEl = document.getElementById("cities");
   const sectionsEl = document.getElementById("sections");
   const filtersEl = document.querySelector(".filters");
   const mapEl = document.getElementById("map");
@@ -84,6 +90,18 @@
     });
   }
 
+  function renderCities() {
+    citiesEl.replaceChildren();
+    cities.forEach((c) => {
+      const a = el("a", "card city-card");
+      a.href = c.id + "/";
+      a.appendChild(el("h2", null, c.name));
+      const desc = c[state.lang] || c.en;
+      if (desc) a.appendChild(el("p", "desc", desc));
+      citiesEl.appendChild(a);
+    });
+  }
+
   function renderFilters() {
     filtersEl.replaceChildren();
     const options = [{ id: "all", label: TEXT[state.lang].all }].concat(
@@ -116,6 +134,7 @@
       const list = el("div", "cards");
       items.forEach((p) => {
         const card = el("article", "card");
+        if (p.tag) card.appendChild(el("p", "tag", p.tag[state.lang] || p.tag.en));
         card.appendChild(el("h3", null, p.name));
         if (p.address) card.appendChild(el("p", "address", p.address));
         const desc = p[state.lang] || p.en;
@@ -176,6 +195,7 @@
   }
 
   function initMap() {
+    if (!mapEl) return;
     if (typeof L === "undefined" || !places.some(hasCoords)) {
       mapEl.hidden = true;
       return;
@@ -194,9 +214,12 @@
 
   function render() {
     renderText();
-    renderFilters();
-    renderSections();
-    renderMarkers();
+    if (citiesEl) renderCities();
+    if (sectionsEl) {
+      renderFilters();
+      renderSections();
+      renderMarkers();
+    }
   }
 
   document.querySelectorAll(".lang-switch button").forEach((b) => {
