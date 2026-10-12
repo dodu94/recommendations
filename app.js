@@ -18,10 +18,22 @@
     }
   };
 
+  // Storage can throw when blocked (private mode, strict privacy, in-app browsers).
+  function loadLang() {
+    try {
+      const lang = localStorage.getItem("lang");
+      return TEXT[lang] ? lang : null;
+    } catch (e) { return null; }
+  }
+
+  function saveLang(lang) {
+    try { localStorage.setItem("lang", lang); } catch (e) { /* not remembered */ }
+  }
+
   const categories = window.CATEGORIES || [];
   const places = (window.PLACES || []).map((p, i) => ({ ...p, id: i }));
   const state = {
-    lang: localStorage.getItem("lang") ||
+    lang: loadLang() ||
       ((navigator.language || "").toLowerCase().startsWith("it") ? "it" : "en"),
     filter: "all"
   };
@@ -173,10 +185,9 @@
       // One-finger drag on phones would hijack page scrolling; pinch-zoom still works.
       dragging: !L.Browser.mobile
     });
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-      subdomains: "abcd",
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
     markerLayer = L.layerGroup().addTo(map);
   }
@@ -191,7 +202,7 @@
   document.querySelectorAll(".lang-switch button").forEach((b) => {
     b.addEventListener("click", () => {
       state.lang = b.dataset.lang;
-      localStorage.setItem("lang", state.lang);
+      saveLang(state.lang);
       render();
     });
   });

@@ -138,6 +138,9 @@ h1 {
 
 .leaflet-container { font-family: var(--sans); }
 
+/* Mute the colourful OpenStreetMap tiles to match the palette. */
+.leaflet-tile-pane { filter: grayscale(0.85) sepia(0.15) brightness(1.03) contrast(0.9); }
+
 /* Sections */
 .category { margin-bottom: 3.5rem; }
 
