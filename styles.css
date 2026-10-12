@@ -1,0 +1,228 @@
+:root {
+  --bg: #fbf9f6;
+  --text: #2f2d2a;
+  --muted: #8a857d;
+  --line: #e6e1d9;
+  --accent: #9a6b4f;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+main, .site-header, .site-footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header */
+.site-header {
+  position: relative;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.names {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0.5rem 0 1rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.intro {
+  max-width: 34rem;
+  margin: 0 auto;
+  color: var(--muted);
+}
+
+.lang-switch {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 0.75rem;
+  color: var(--line);
+}
+
+.lang-switch button {
+  background: none;
+  border: 0;
+  padding: 0.25rem;
+  font: inherit;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.lang-switch button[aria-pressed="true"] {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: transparent;
+  font: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.chip::before {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--dot, var(--muted));
+}
+
+.chip:hover { border-color: var(--muted); }
+
+.chip[aria-pressed="true"] {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--bg);
+}
+
+/* Map */
+.map {
+  height: 320px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  margin-bottom: 3rem;
+  z-index: 0;
+}
+
+.popup strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.leaflet-container { font-family: var(--sans); }
+
+/* Sections */
+.category { margin-bottom: 3.5rem; }
+
+.category h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+
+.category h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1.25rem 1.25rem 1.1rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 4px;
+  transition: box-shadow 0.2s;
+}
+
+.card.clickable { cursor: pointer; }
+.card.clickable:hover { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05); }
+
+.card h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.35rem;
+}
+
+.address {
+  margin: 0.1rem 0 0.6rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.desc {
+  margin: 0 0 0.9rem;
+  font-size: 0.95rem;
+}
+
+.maps-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+}
+
+.maps-link:hover { opacity: 0.7; }
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.site-footer a {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-footer a:hover { color: var(--text); }
+
+@media (min-width: 700px) {
+  .map { height: 420px; }
+  .cards { grid-template-columns: 1fr 1fr; }
+}
