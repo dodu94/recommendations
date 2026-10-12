@@ -2,7 +2,13 @@
 // Without a mapsUrl, the "Open in Google Maps" button searches for name + address.
 
 window.CATEGORIES = [
-  { id: "mosaics", color: "#b08a4a", en: "Mosaic Tour",  it: "Percorso dei mosaici" },
+  {
+    id: "mosaics", color: "#b08a4a", en: "Mosaic Tour", it: "Percorso dei mosaici",
+    intro: {
+      en: "We recommend booking a guided tour: it will take you to all the places listed below.",
+      it: "Vi consigliamo di prenotare una visita guidata, che vi porterà in tutti i luoghi elencati qui sotto."
+    }
+  },
   { id: "culture", color: "#6a7a8c", en: "More Culture", it: "Altra cultura" }
 ];
 
@@ -13,8 +19,8 @@ window.PLACES = [
     name: "San Vitale & Galla Placidia",
     address: "Via San Vitale 17, Ravenna",
     lat: 44.42058, lng: 12.19631,
-    en: "Start here. The basilica's mosaics of Emperor Justinian and Empress Theodora, and next door the tiny mausoleum with its starry blue vault. One combined ticket covers most of the tour.",
-    it: "Iniziate da qui. I mosaici dell'imperatore Giustiniano e dell'imperatrice Teodora nella basilica e, accanto, il piccolo mausoleo con la sua volta stellata. Un biglietto cumulativo copre gran parte del percorso."
+    en: "The basilica's mosaics of Emperor Justinian and Empress Theodora, and next door the tiny mausoleum with its starry blue vault.",
+    it: "I mosaici dell'imperatore Giustiniano e dell'imperatrice Teodora nella basilica e, accanto, il piccolo mausoleo con la sua volta stellata."
   },
   {
     category: "mosaics",
@@ -32,16 +38,16 @@ window.PLACES = [
     en: "The oldest monument in Ravenna, with the Baptism of Christ in the dome.",
     it: "Il monumento più antico di Ravenna, con il Battesimo di Cristo nella cupola."
   },
+
+  // More Culture
   {
-    category: "mosaics",
+    category: "culture",
     name: "Sant'Apollinare in Classe",
     address: "Via Romea Sud 224, Classe",
     lat: 44.38028, lng: 12.23302,
-    en: "A few kilometres south of the centre, worth the short trip for its green and gold apse.",
-    it: "A pochi chilometri dal centro, vale la breve gita per il suo abside verde e oro."
+    en: "More mosaics, a few kilometres south of the centre: worth the short trip for its green and gold apse.",
+    it: "Altri mosaici, a pochi chilometri dal centro: vale la breve gita per il suo abside verde e oro."
   },
-
-  // More Culture
   {
     category: "culture",
     name: "Tomba di Dante",

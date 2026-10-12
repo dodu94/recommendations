@@ -6,8 +6,11 @@
 //   address  : street/area shown under the name
 //   lat, lng : for the map pin (worked out from the Google Maps link)
 //   mapsUrl  : the Google Maps "Share" link
+//   linkLabel: optional button text { en, it } when mapsUrl isn't Google Maps
 //   tag      : optional small label above the name, in English and Italian
 //   en, it   : short description in English and Italian
+//
+// A category can also have an intro: { en, it } sentence shown under its heading.
 //
 // Entries marked "[...]" are placeholders still to be written.
 

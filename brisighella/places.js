@@ -58,6 +58,18 @@ window.PLACES = [
     en: "Hike through the Carnè park and the calanchi (clay badlands).",
     it: "Escursione nel Parco Carnè e tra i calanchi."
   },
+  {
+    category: "outdoors",
+    tag: { en: "Hiking", it: "Escursione" },
+    name: "From the Rocca to Brisighella",
+    address: "Via Rontana 64, Brisighella",
+    // Nudged ~20 m west of the Rocca so it doesn't sit exactly on La Rocca's pin.
+    lat: 44.22478, lng: 11.77066,
+    mapsUrl: "https://mapy.com/s/duvelakanu",
+    linkLabel: { en: "See the route", it: "Vedi il percorso" },
+    en: "A hiking route of 11.7 km, about 4 hours, starting at the Rocca Manfrediana.",
+    it: "Un percorso escursionistico di 11,7 km, circa 4 ore, con partenza dalla Rocca Manfrediana."
+  },
 
   // Restaurants
   {

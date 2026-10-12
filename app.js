@@ -65,7 +65,8 @@
   }
 
   function mapsLink(p) {
-    const a = el("a", "maps-link", TEXT[state.lang].open);
+    const label = p.linkLabel ? p.linkLabel[state.lang] || p.linkLabel.en : TEXT[state.lang].open;
+    const a = el("a", "maps-link", label);
     a.href = mapsUrl(p);
     a.target = "_blank";
     a.rel = "noopener noreferrer";
@@ -130,6 +131,7 @@
       const section = el("section", "category");
       section.style.setProperty("--accent", c.color);
       section.appendChild(el("h2", null, c[state.lang]));
+      if (c.intro) section.appendChild(el("p", "section-intro", c.intro[state.lang] || c.intro.en));
 
       const list = el("div", "cards");
       items.forEach((p) => {

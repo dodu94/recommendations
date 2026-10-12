@@ -19,5 +19,11 @@ window.CITIES = [
     name: "Ravenna",
     en: "The city of Byzantine mosaics",
     it: "La città dei mosaici bizantini"
+  },
+  {
+    id: "bologna",
+    name: "Bologna",
+    en: "Our university city",
+    it: "La nostra città universitaria"
   }
 ];
