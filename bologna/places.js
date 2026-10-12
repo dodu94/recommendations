@@ -182,8 +182,8 @@ window.PLACES = [
     name: "Papparè",
     address: "Via dei Giudei 2, Bologna",
     lat: 44.49470, lng: 11.34655,
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Brunch options, home made croissants and specialty coffee",
+    it: "Brunch, cornetti farciti e caffe di specialità"
   },
   {
     category: "breakfast",
