@@ -5,7 +5,13 @@ window.CITIES = [
   {
     id: "faenza",
     name: "Faenza",
-    en: "[Short description of Faenza]",
-    it: "[Breve descrizione di Faenza]"
+    en: "Where we grew up",
+    it: "Dove siamo cresciuti"
+  },
+  {
+    id: "brisighella",
+    name: "Brisighella",
+    en: "A medieval village 10 minutes by train from Faenza",
+    it: "Borgo medievale a 10 minuti di treno da Faenza"
   }
 ];

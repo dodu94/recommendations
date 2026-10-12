@@ -27,8 +27,8 @@ window.PLACES = [
     address: "Viale Stradone 2, Faenza",
     lat: 44.28297, lng: 11.87633,
     mapsUrl: "https://maps.app.goo.gl/UEfzUXCZYPyzMNvA7",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Excellent Neapolitan-style pizza and craft beer.",
+    it: "Ottima pizza in stile napoletano e birra artigianale"
   },
   {
     category: "restaurants",
@@ -37,18 +37,8 @@ window.PLACES = [
     address: "Via Naviglio 25/C, Faenza",
     lat: 44.28820, lng: 11.88323,
     mapsUrl: "https://maps.app.goo.gl/FZrgixyzWinhjHvz5",
-    en: "In the city centre. A bit expensive, but worth it.",
-    it: "In centro. Un po' cara, ma ne vale la pena."
-  },
-  {
-    category: "restaurants",
-    tag: { en: "Romagnolo DOC", it: "Romagnolo DOC" },
-    name: "Contea di Val d'Amone",
-    address: "Via Molino del Rosso 18, Brisighella",
-    lat: 44.24284, lng: 11.81155,
-    mapsUrl: "https://maps.app.goo.gl/Tzxt7guNYVgnrY9h6",
-    en: "On the hills around Faenza.",
-    it: "Sulle colline intorno a Faenza."
+    en: "Perhaps the best restaurant in town. A bit expensive, but worth it. Make sure to try the cheeses.",
+    it: "Forse il più buon ristorante. Un po' cara, ma ne vale la pena. Mi raccomando, provate i formaggi."
   },
   {
     category: "restaurants",
@@ -57,8 +47,8 @@ window.PLACES = [
     address: "Via San Mamante 136, Faenza",
     lat: 44.21499, lng: 11.91055,
     mapsUrl: "https://maps.app.goo.gl/omqC67JtcaU7j2Xx5",
-    en: "On the hills around Faenza.",
-    it: "Sulle colline intorno a Faenza."
+    en: "A farmhouse restaurant on the hills around Faenza, with typical Romagna cooking.",
+    it: "Agriturismo sulle colline intorno a Faenza, cibo tipicamente romagnolo."
   },
   {
     category: "restaurants",
@@ -67,8 +57,8 @@ window.PLACES = [
     address: "Via Zanelli 2, Faenza",
     lat: 44.28619, lng: 11.88092,
     mapsUrl: "https://maps.app.goo.gl/sx7BLV7Uaofw391A8",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Huge portions of spaghetti with iconic sauces.",
+    it: "Maxi porzioni di spaghetti con salse iconiche"
   },
   {
     category: "restaurants",
@@ -77,8 +67,8 @@ window.PLACES = [
     address: "Via Mura Diamante Torelli 67, Faenza",
     lat: 44.28268, lng: 11.88326,
     mapsUrl: "https://maps.app.goo.gl/qesmVMiidJVxv9AT7",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Gourmet burgers and craft beers in a relaxed outdoor space.",
+    it: "Hamburger gourmet e birre artigianali in uno spazio all'aperto e chill."
   },
 
   // Wine & Drinks
@@ -88,8 +78,8 @@ window.PLACES = [
     address: "Corso Aurelio Saffi 5, Faenza",
     lat: 44.28551, lng: 11.88381,
     mapsUrl: "https://maps.app.goo.gl/WeDEKznXu7eZvSrd7",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Right in the centre, with good drinks and wines.",
+    it: "In pieno centro, buoni drinks e vini."
   },
   {
     category: "drinks",
@@ -97,17 +87,8 @@ window.PLACES = [
     address: "Corso Giacomo Matteotti 25/A, Faenza",
     lat: 44.28390, lng: 11.88065,
     mapsUrl: "https://maps.app.goo.gl/SoyS3UmaXT8nTU3p6",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
-  },
-  {
-    category: "drinks",
-    name: "Enoteca Astorre",
-    address: "Piazza della Libertà 16/A, Faenza",
-    lat: 44.28628, lng: 11.88398,
-    mapsUrl: "https://maps.app.goo.gl/Nkx2WtzcyETTJutE6",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Signature cocktails.",
+    it: "Cocktail d'autore."
   },
 
   // Breakfast
@@ -117,8 +98,8 @@ window.PLACES = [
     address: "Piazza della Libertà 21, Faenza",
     lat: 44.28568, lng: 11.88378,
     mapsUrl: "https://maps.app.goo.gl/jChJEEWyAXhTzueK6",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "A local classic for both breakfast and aperitivo, overlooking the square.",
+    it: "Un grande classico, sia per colazione che aperitivi. Vista sulla piazza"
   },
   {
     category: "breakfast",
@@ -126,8 +107,8 @@ window.PLACES = [
     address: "Viale Alfredo Baccarini 42, Faenza",
     lat: 44.28927, lng: 11.88012,
     mapsUrl: "https://maps.app.goo.gl/aKqaKbGSaQY9L19F8",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Great sweet and savoury breakfasts.",
+    it: "Ottime colazioni salate e dolci."
   },
   {
     category: "breakfast",
@@ -136,8 +117,8 @@ window.PLACES = [
     address: "Corso Aurelio Saffi 48/A, Faenza",
     lat: 44.28468, lng: 11.88627,
     mapsUrl: "https://maps.app.goo.gl/ERMavufTHpDyuzNk9",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "An award-winning pastry shop. The breakfast for when you want to treat yourself.",
+    it: "Pasticceria premiata. La colazione per quando ci si vuole trattare bene."
   },
 
   // Things to Do
@@ -156,8 +137,8 @@ window.PLACES = [
     address: "Via Tonducci 15, Faenza",
     lat: 44.28510, lng: 11.87847,
     mapsUrl: "https://maps.app.goo.gl/FUAcgfWU6VDg24Wc8",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Visit for a dive into Faenza's neoclassical past.",
+    it: "Visitare per un tuffo nel neoclassicismo faentino."
   },
   {
     category: "todo",
@@ -165,8 +146,8 @@ window.PLACES = [
     address: "Viale Alfredo Baccarini 19, Faenza",
     lat: 44.28947, lng: 11.88106,
     mapsUrl: "https://maps.app.goo.gl/8icA7KD5J4r3mghX6",
-    en: "[Description to add]",
-    it: "[Descrizione da aggiungere]"
+    en: "Faenza is world-famous for its ceramics. The museum's collection spans hundreds of years of history.",
+    it: "Faenza è conosciuta a livello mondiale per le sue ceramiche. Il museo ha una collezione che copre centinaia di anni di storia."
   },
   {
     category: "todo",
@@ -175,8 +156,8 @@ window.PLACES = [
     address: "Corso Mazzini 64, Faenza",
     lat: 44.28720, lng: 11.87963,
     mapsUrl: "https://maps.app.goo.gl/PF5Qmjf7jhopDQNZ7",
-    en: "Artisanal ceramics studio and shop.",
-    it: "Bottega artigiana di ceramica."
+    en: "Artisanal ceramics workshop. One of the best souvenirs from Faenza.",
+    it: "Bottega artigiana di ceramica. Uno dei migliori souvenir a Faenza."
   },
   {
     category: "todo",
@@ -185,8 +166,8 @@ window.PLACES = [
     address: "Via Pompignoli 4, Faenza",
     lat: 44.28157, lng: 11.89223,
     mapsUrl: "https://maps.app.goo.gl/voxhbzvRxbGexxiCA",
-    en: "Artisanal ceramics studio and shop.",
-    it: "Bottega artigiana di ceramica."
+    en: "Artisanal ceramics workshop. One of the best souvenirs from Faenza.",
+    it: "Bottega artigiana di ceramica. Uno dei migliori souvenir a Faenza."
   },
   {
     category: "todo",
@@ -195,8 +176,8 @@ window.PLACES = [
     address: "Corso Mazzini 63, Faenza",
     lat: 44.28713, lng: 11.88034,
     mapsUrl: "https://maps.app.goo.gl/gN59fcPJCPiuZ8in6",
-    en: "Artisanal ceramics studio and shop.",
-    it: "Bottega artigiana di ceramica."
+    en: "Artisanal ceramics workshop. One of the best souvenirs from Faenza.",
+    it: "Bottega artigiana di ceramica. Uno dei migliori souvenir a Faenza."
   },
   {
     category: "todo",
