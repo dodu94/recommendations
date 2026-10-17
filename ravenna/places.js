@@ -1,6 +1,11 @@
 // Ravenna recommendations. See faenza/places.js for the meaning of each field.
 // Without a mapsUrl, the "Open in Google Maps" button searches for name + address.
 
+window.INTRO = {
+  en: "A few of our favourite places to explore while you are here.",
+  it: "Alcuni dei nostri posti preferiti da esplorare durante il vostro soggiorno."
+};
+
 window.CATEGORIES = [
   {
     id: "mosaics", color: "#b08a4a", en: "Mosaic Tour", it: "Percorso dei mosaici",
@@ -46,7 +51,7 @@ window.PLACES = [
     address: "Via Romea Sud 224, Classe",
     lat: 44.38028, lng: 12.23302,
     en: "More mosaics, a few kilometres south of the centre: worth the short trip for its green and gold apse.",
-    it: "Altri mosaici, a pochi chilometri dal centro: vale la breve gita per il suo abside verde e oro."
+    it: "Altri mosaici, a pochi chilometri dal centro: vale la breve gita per la sua abside verde e oro."
   },
   {
     category: "culture",

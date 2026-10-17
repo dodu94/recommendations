@@ -11,6 +11,7 @@
 //   en, it   : short description in English and Italian
 //
 // A category can also have an intro: { en, it } sentence shown under its heading.
+// A city can replace the page's opening sentence with window.INTRO = { en, it }.
 //
 // Entries marked "[...]" are placeholders still to be written.
 
@@ -31,7 +32,7 @@ window.PLACES = [
     lat: 44.28297, lng: 11.87633,
     mapsUrl: "https://maps.app.goo.gl/UEfzUXCZYPyzMNvA7",
     en: "Excellent Neapolitan-style pizza and craft beer.",
-    it: "Ottima pizza in stile napoletano e birra artigianale"
+    it: "Ottima pizza in stile napoletano e birra artigianale."
   },
   {
     category: "restaurants",
@@ -41,7 +42,7 @@ window.PLACES = [
     lat: 44.28820, lng: 11.88323,
     mapsUrl: "https://maps.app.goo.gl/FZrgixyzWinhjHvz5",
     en: "Perhaps the best restaurant in town. A bit expensive, but worth it. Make sure to try the cheeses.",
-    it: "Forse il più buon ristorante. Un po' cara, ma ne vale la pena. Mi raccomando, provate i formaggi."
+    it: "Forse il miglior ristorante. Un po' caro, ma ne vale la pena. Mi raccomando, provate i formaggi."
   },
   {
     category: "restaurants",
@@ -61,7 +62,7 @@ window.PLACES = [
     lat: 44.28619, lng: 11.88092,
     mapsUrl: "https://maps.app.goo.gl/sx7BLV7Uaofw391A8",
     en: "Huge portions of spaghetti with iconic sauces.",
-    it: "Maxi porzioni di spaghetti con salse iconiche"
+    it: "Maxi porzioni di spaghetti con salse iconiche."
   },
   {
     category: "restaurants",
@@ -82,7 +83,7 @@ window.PLACES = [
     lat: 44.28551, lng: 11.88381,
     mapsUrl: "https://maps.app.goo.gl/WeDEKznXu7eZvSrd7",
     en: "Right in the centre, with good drinks and wines.",
-    it: "In pieno centro, buoni drinks e vini."
+    it: "In pieno centro, buoni drink e vini."
   },
   {
     category: "drinks",
@@ -102,7 +103,7 @@ window.PLACES = [
     lat: 44.28568, lng: 11.88378,
     mapsUrl: "https://maps.app.goo.gl/jChJEEWyAXhTzueK6",
     en: "A local classic for both breakfast and aperitivo, overlooking the square.",
-    it: "Un grande classico, sia per colazione che aperitivi. Vista sulla piazza"
+    it: "Un grande classico, sia per colazione che aperitivi. Vista sulla piazza."
   },
   {
     category: "breakfast",
@@ -127,7 +128,7 @@ window.PLACES = [
   // Things to Do
   {
     category: "todo",
-    name: "Old town",
+    name: "Centro storico",
     address: "Piazza del Popolo, Faenza",
     lat: 44.28517, lng: 11.88285,
     mapsUrl: "https://maps.app.goo.gl/FnUiaprrKif46hFE6",
@@ -141,7 +142,7 @@ window.PLACES = [
     lat: 44.28510, lng: 11.87847,
     mapsUrl: "https://maps.app.goo.gl/FUAcgfWU6VDg24Wc8",
     en: "Visit for a dive into Faenza's neoclassical past.",
-    it: "Visitare per un tuffo nel neoclassicismo faentino."
+    it: "Visitate per un tuffo nel neoclassicismo faentino."
   },
   {
     category: "todo",
@@ -151,6 +152,14 @@ window.PLACES = [
     mapsUrl: "https://maps.app.goo.gl/8icA7KD5J4r3mghX6",
     en: "Faenza is world-famous for its ceramics. The museum's collection spans hundreds of years of history.",
     it: "Faenza è conosciuta a livello mondiale per le sue ceramiche. Il museo ha una collezione che copre centinaia di anni di storia."
+  },
+  {
+    category: "todo",
+    name: "Museo Carlo Zauli",
+    address: "Via della Croce 6, Faenza",
+    lat: 44.28745, lng: 11.88687,
+    en: "The former studio of Carlo Zauli, one of Faenza's great 20th-century ceramic sculptors, now a museum of his work.",
+    it: "L'ex laboratorio di Carlo Zauli, uno dei grandi scultori ceramisti faentini del Novecento, oggi museo delle sue opere."
   },
   {
     category: "todo",

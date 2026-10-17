@@ -54,14 +54,15 @@ window.PLACES = [
     name: "Parco Carnè",
     address: "Via Rontana 42, Brisighella",
     lat: 44.22696, lng: 11.73774,
-    mapsUrl: "https://maps.app.goo.gl/G2S5SQH4MAXHwPw7A",
+    mapsUrl: "https://mapy.com/s/pulegufoga",
+    linkLabel: { en: "See the route", it: "Vedi il percorso" },
     en: "Hike through the Carnè park and the calanchi (clay badlands).",
     it: "Escursione nel Parco Carnè e tra i calanchi."
   },
   {
     category: "outdoors",
     tag: { en: "Hiking", it: "Escursione" },
-    name: "From the Rocca to Brisighella",
+    name: "Rocca Manfrediana → Brisighella",
     address: "Via Rontana 64, Brisighella",
     // Nudged ~20 m west of the Rocca so it doesn't sit exactly on La Rocca's pin.
     lat: 44.22478, lng: 11.77066,
@@ -89,8 +90,8 @@ window.PLACES = [
     address: "Via Molino del Rosso 18, Brisighella",
     lat: 44.24284, lng: 11.81155,
     mapsUrl: "https://maps.app.goo.gl/Tzxt7guNYVgnrY9h6",
-    en: "On the hills around Faenza, with typical Romagna cooking.",
-    it: "Sulle colline intorno a Faenza, cibo tipicamente romagnolo."
+    en: "On the hills between Faenza and Brisighella, with typical Romagna cooking.",
+    it: "Sulle colline tra Faenza e Brisighella, cibo tipicamente romagnolo."
   },
   {
     category: "restaurants",
@@ -98,7 +99,7 @@ window.PLACES = [
     address: "Via Berta 13, Brisighella",
     lat: 44.26433, lng: 11.80481,
     mapsUrl: "https://maps.app.goo.gl/BqQuSNVT1zR19iUJA",
-    en: "Great view.",
-    it: "Vista bellissima."
+    en: "Just outside Brisighella: dinner surrounded by vineyards, with a great view.",
+    it: "Appena fuori Brisighella: una cena circondati dai vigneti, con una vista bellissima."
   }
 ];

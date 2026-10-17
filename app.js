@@ -84,7 +84,9 @@
   function renderText() {
     document.documentElement.lang = state.lang;
     document.querySelectorAll("[data-i18n]").forEach((node) => {
-      node.textContent = TEXT[state.lang][node.dataset.i18n];
+      const key = node.dataset.i18n;
+      const custom = key === "cityIntro" && window.INTRO;
+      node.textContent = custom ? custom[state.lang] || custom.en : TEXT[state.lang][key];
     });
     document.querySelectorAll(".lang-switch button").forEach((b) => {
       b.setAttribute("aria-pressed", String(b.dataset.lang === state.lang));

@@ -65,15 +65,23 @@ window.PLACES = [
   },
   {
     category: "todo",
+    tag: { en: "Museum", it: "Museo" },
+    name: "MAMbo",
+    address: "Via Don Minzoni 14, Bologna",
+    lat: 44.50255, lng: 11.33696,
+    en: "Bologna's Museum of Modern Art, housed in the city's former public bakery.",
+    it: "Il Museo d'Arte Moderna di Bologna, ospitato nell'ex forno del pane comunale."
+  },
+  {
+    category: "todo",
     tag: { en: "Festival · 19–27 June", it: "Festival · 19–27 giugno" },
     name: "Il Cinema Ritrovato",
-    address: "Piazza Maggiore, Bologna",
-    // ~40 m north of the Piazza Maggiore pin, still inside the square, so the two don't stack.
-    lat: 44.49400, lng: 11.34305,
+    address: "Cinema Modernissimo, Piazza Re Enzo 1, Bologna",
+    lat: 44.49452, lng: 11.34395,
     mapsUrl: "https://ilcinemaritrovato.it/edizioni/2027/?tab=program",
     linkLabel: { en: "Festival programme", it: "Programma del festival" },
-    en: "During the festival you can watch a film under the stars on the big screen in Piazza Maggiore. Remember to book! If you love cinema, also visit Cinema Lumière that week.",
-    it: "Durante il festival potete vedere un film sotto le stelle sul grande schermo di Piazza Maggiore. È importante prenotare! Se amate il cinema, quella settimana passate anche al Cinema Lumière."
+    en: "During the festival you can watch a film under the stars on the big screen in Piazza Maggiore. Remember to book! If you love cinema, don't miss the Modernissimo, a 1915 underground cinema just off the square, restored by the Cineteca di Bologna and reopened in 2023. Cinema Lumière is also worth a visit that week.",
+    it: "Durante il festival potete vedere un film sotto le stelle sul grande schermo di Piazza Maggiore. È importante prenotare! Se amate il cinema, non perdetevi il Modernissimo, un cinema sotterraneo del 1915 a due passi dalla piazza, restaurato dalla Cineteca di Bologna e riaperto nel 2023. Quella settimana vale la pena passare anche al Cinema Lumière."
   },
 
   // Restaurants
@@ -105,7 +113,7 @@ window.PLACES = [
     lat: 44.49310, lng: 11.34633,
     mapsUrl: "https://maps.app.goo.gl/mefFgSnZaMdab8Hz8",
     en: "One of the few places that doesn't take bookings, handy if everywhere else is full. Go early to avoid the queue.",
-    it: "Uno dei pochi posti dove non si può prenotare. Utile se tutto il resto è già pieno. Andare sul presto per evitare la fila."
+    it: "Uno dei pochi posti dove non si può prenotare. Utile se tutto il resto è già pieno. Andate presto per evitare la fila."
   },
   {
     category: "restaurants",
@@ -144,7 +152,7 @@ window.PLACES = [
     lat: 44.49294, lng: 11.34752,
     mapsUrl: "https://maps.app.goo.gl/FFUuFnGS2xcSYDW99",
     en: "One of the most famous gelato shops in Bologna. Expect a queue.",
-    it: "Uno dei gelati più famosi di Bologna. Ci sarà fila."
+    it: "Una delle gelaterie più famose di Bologna. Ci sarà fila."
   },
   {
     category: "gelato",
@@ -175,6 +183,14 @@ window.PLACES = [
     en: "A cocktail bar on Via del Pratello, the heart of Bologna's nightlife.",
     it: "Cocktail bar in Via del Pratello, centro della vita notturna bolognese."
   },
+  {
+    category: "drinks",
+    name: "Camera a Sud",
+    address: "Via Valdonica 5, Bologna",
+    lat: 44.49631, lng: 11.34734,
+    en: "A bar full of books with a chilled-out vibe, in the old Jewish Ghetto.",
+    it: "Un bar pieno di libri dall'atmosfera rilassata, nel Ghetto ebraico."
+  },
 
   // Breakfast
   {
@@ -182,8 +198,8 @@ window.PLACES = [
     name: "Papparè",
     address: "Via dei Giudei 2, Bologna",
     lat: 44.49470, lng: 11.34655,
-    en: "Brunch options, home made croissants and specialty coffee",
-    it: "Brunch, cornetti farciti e caffe di specialità"
+    en: "Brunch, filled croissants and specialty coffee.",
+    it: "Brunch, cornetti farciti e caffè di specialità."
   },
   {
     category: "breakfast",
